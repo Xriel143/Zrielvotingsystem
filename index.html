@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #007bff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: slideDown 1s ease-out;
+        }
+
+        p {
+            font-size: 20px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            animation: slideUp 1s ease-out;
+        }
+
+        .features, .how-it-works {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #007bff;
+            display: inline-block;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        li::before {
+            content: "\2713";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 20px;
+        }
+
+        strong {
+            color: #007bff;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            transition: all 0.3s ease;
+            animation: pulse 1.5s infinite;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Voting System</h1>
+            <p>Make your voice heard! Participate in the voting process with ease and security.</p>
+        </header>
+
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Secure and Private:</strong> Your vote is safe and anonymous.</li>
+                <li><strong>Easy to Use:</strong> A straightforward interface designed for all users.</li>
+                <li><strong>Real-time Results:</strong> Instant access to voting outcomes.</li>
+                <li><strong>Accessible Anywhere:</strong> Vote from any device, at any time.</li>
+            </ul>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Register/Login:</strong> Sign in to access the voting system.</li>
+                <li><strong>Choose Your Candidates/Options:</strong> Select your preferred candidates or options.</li>
+                <li><strong>Submit Your Vote:</strong> Confirm and submit your vote securely.</li>
+                <li><strong>View Results:</strong> Track the results in real-time.</li>
+            </ol>
+        </section>
+
+        <section class="cta">
+            <a href="admin/index.php" class="button">Admin Login</a>
+			<a href="index.php" class="button">User Login</a>
+        </section>
+    </div>
+</body>
+</html>
